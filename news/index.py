@@ -98,9 +98,9 @@ class News:
 
     # 发送邮件
     def sendEmail(self):
-        server = sendEmail.SendEmail('smtp.qq.com', '1426805294@qq.com', 'plcxlziybswmjgea')
+        server = sendEmail.SendEmail('smtp.qq.com', 'XXXXXXXX', 'XXXXXXXX')
         server.fillTpl(self.mailContent1, self.mailContent2, self.mailContent3)
-        server.send('1426805294@qq.com', ['525378271@qq.com'], 'Python系统', '尊敬的张奕枫', '每日邮件')
+        server.send('XXXXXXXX', ['XXXXXXXX'], 'Python系统', '尊敬的XXXXXXXX', '每日邮件')
 
 
     # 运行
