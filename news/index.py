@@ -38,7 +38,8 @@ class News:
     def getTechNews(self):
         content = urllib.request.urlopen('http://163.com').read()
         soup = BeautifulSoup(content, "html.parser")
-        ps = soup.find_all(attrs={'ne-module': "modules/tech/tech.js"})
+        # ps = soup.find_all(attrs={'ne-module': "modules/tech/tech.js"}) 20190531作废
+        ps = soup.find_all(attrs={'ne-module': "/www/index20170701/modules/tech/tech.js"})
         dataArr = []
         nowTime = int(time.time())
         title = ''
